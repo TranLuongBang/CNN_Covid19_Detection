@@ -116,25 +116,9 @@ Where:
 
 In this study, Chest X-ray images have been used for prediction of coronavirus disease patients (COVID-19). Popular pre-trained models such as DenseNet121 and VGG16 have been trained and tested on chest X-ray images. Training accuracy and loss values of pretrained models are given in Figure 3 and Figure 4 respectively. The training stage has been carried out up to 20 epoches to avoid overfitting for all pre-trained models. It can be seen from Figure 3 that the training accuracy of DenseNet121 is better than VGG16 but both pre-train models obtained really high training accuracy. When the loss figure are analyzed, it is seen that the loss values decrease in teo pre-trained models during the training stage. It can be said that DenseNet121 model both decreases loss values faster and approaches zero. 
 
-![](Report.017.png)
-
-*Figure 3 The performance of  pre-trained models (Training Accuracy)* 
-
-![](Report.018.png)
-
-*Figure 4 The Performance of pre-trained models (Training Loss)* 
 
 In Figure 5, Confusion matrices of COVID-19 and normal test results of the models are given. Firstly, DenseNet121 pre-trained model classified 40 of the COVID-19 as True Positive and classified 40 of the normal as True Negative. Secondly, VGG16  model also classified 40 of the COVID-19 as True Positive and classified 40 of the normal as True Negative. DenseNet121 and VGG16 pretrained models appear to be very high. 
 
-![](Report.019.png)
-
-*a)* 
-
-![](Report.020.png)
-
-*b)* 
-
-Figure 5 The Confusion Matrix a) DenseNet121 b) VGG16 
 
 In another detailed performance, comparisions of two models using test data are shown in Table 1. I have obtained the best performance as an accuracy of 100 %, recall 100%, Precision 100%, F1-score 100% for both DenseNet121 and VGG16. As a result, the DenseNet121 and VGG16 model perform really well both training and testing stage. 
 
