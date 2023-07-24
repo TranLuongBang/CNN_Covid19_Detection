@@ -1,4 +1,4 @@
-# Automatic Detection of Coronavirus Desease in X-ray Images
+# Automatic Detection of Coronavirus Disease in X-ray Images
 
 
 1. **Introduction** 
@@ -7,13 +7,13 @@ The newly identified Coronavirus pneumonia, subsequently termed COVID-19, occurr
 
 Despite global efforts of travel restrictions and quarantine, the incidence of novel COVID-19 continues to rise globally, with over 29 million confirmed cases and over 939,935 deaths worldwide today according to worldmeters.info. 
 
-It is evident that early detection of COVID-19 is necessary to interrupt the spread of COVID-19 and prevent transmission by early isolation of patients, trace, and quarantine of close contacts. While not recommended for primary diagnosis of COVID-19, medical imaging modalities such as chest X-ray play an important role in confirming the diagnosis of positive COVID-19 pneumonia as well as monitoring the progression of the disease. These types of images show the extent of irregular ground- glass opacities that progress rapidly after COVID- 19 symptom onset. These abnormalities peaked during days 6-11 of the illness. The second most predominant pattern of lung opacity abnormalities peaks during days 12-17 of the illness. Computer-Aided Diagnosis (CAD) systems that incorporate X-ray image processing techniques and deep learning algorithms could assist doctor as diagnostic aids for COVID-19 and help provide a better understanding of the progression of the disease. 
+It is evident that early detection of COVID-19 is necessary to interrupt the spread of COVID-19 and prevent transmission by early isolation of patients, tracing, and quarantine of close contacts. While not recommended for primary diagnosis of COVID-19, medical imaging modalities such as chest X-ray play an important role in confirming the diagnosis of positive COVID-19 pneumonia as well as monitoring the progression of the disease. These types of images show the extent of irregular ground-glass opacities that progress rapidly after COVID- 19 symptom onset. These abnormalities peaked during days 6-11 of the illness. The second most predominant pattern of lung opacity abnormalities peaks during days 12-17 of the illness. Computer-Aided Diagnosis (CAD) systems that incorporate X-ray image processing techniques and deep learning algorithms could assist doctors as diagnostic aids for COVID-19 and help provide a better understanding of the progression of the disease. 
 
 2. **Proposed Methodology** 
 
-In this study, authors of the articles have proposed an automatic prediction of COVID-19 using a deep convolution neural network based pre-trained transfer models and Chest X-ray images. **Convolutional neural networks** 
+In this study, the authors of the articles have proposed an automatic prediction of COVID-19 using a deep convolution neural network based pre-trained transfer models and Chest X-ray images. **Convolutional neural networks** 
 
-Convolutional neural networks (CNNs) is a powerful tool for automatically classifying 2D or 3D image patches.  
+Convolutional neural networks (CNNs) are a powerful tool for automatically classifying 2D or 3D image patches.  
 
 CNNs have two main parts: 
 
@@ -72,7 +72,7 @@ DenseNet can be regarded as a logical extension of ResNet which was first propos
 
 **Dataset Description** 
 
-In order to evaluate the performance of our feature extracting and classifying approach, I use the pubic dataset of Xray images provided by Dr.Joseph Cohen avaivable from github repository. I use the available 180 chest X-ray images of COVID-19 positive cases (1) and 200 image of healthy cases from Kaggle Chest X-ray Image dataset available (2) 
+In order to evaluate the performance of our feature extracting and classifying approach, I use the pubic dataset of Xray images provided by Dr.Joseph Cohen avaivable from github repository. I use the available 180 chest X-ray images of COVID-19 positive cases (1) and 200 images of healthy cases from Kaggle Chest X-ray Image dataset available (2) 
 
 ![](Report.009.png)
 
@@ -103,7 +103,7 @@ Here I have used a Keras ImageDataGenerator object to apply data augmentation fo
 4 criteria were used for the performances of deep transfer learning models. These are: 
 
 *Accuracy* shows the number of correctly classified cases divided by the total number of test images, and is defined as: 
-*Recall* or sensitivity is the measure of Covid-19 cases that are correatly classified. Recall is critical, especially in the medical field
+*Recall* or sensitivity is the measure of Covid-19 cases that are correctly classified. Recall is critical, especially in the medical field
 *Precision* or positive predictive value is defined as the percentage of correctly clasified labels in truly positive patients: 
 *F1-score* is defined as the weighted average of precision and recall that combines both the precision and recall together.                      
 Where: 
